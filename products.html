@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Concept Design for the jquery product configurator</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="style/jquery.product-configurator.css" type="text/css">
+	<link rel="stylesheet" href="style/style.css">
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<header>
+		<nav id="menu">
+            <div class="logo-switch" id="switch">
+                <a href="index.html"><img src="src/logo.png" alt="logo-daisalux" id="logo" width="172" height="56"></a>
+                <!-- Rounded switch -->
+                <label class="switch">
+                    <input type="checkbox" id="encender" onclick="show_mobile_menu()">
+                <span class="slider round"></span>
+            </div>
+            <div id="main-menu" class="menu">
+                <ul class="menu-one">
+                    <li class="menu-elements-one"><a href="products.html">Productos</a></li>
+                    <li class="menu-elements-one">Proyectos</li>
+                    <li class="menu-elements-one">Contacto</li>
+                </ul>
+                <hr class="line">
+                <ul class="menu-two">
+                    <li class="menu-elements">Catálogos</li>
+                    <li class="menu-elements">Descargas</li>
+                    <li class="menu-elements">Notícias</li>
+                </ul>
+
+            </div>
+            
+                <ul class="languages" id="lang">
+                    <li class="language">ES</li>
+                    <li class="language">EN</li>
+                    <li class="language">FR</li>
+                    <li class="language">IT</li>
+                    <li class="language-pt">PT</li>
+                </ul>
+        </nav>
+		</header>
+		<div id="box-configurator">
+		<h2>Productos</h2>
+		</div>
+	</div>
+	<section id="container-type-product">
+		<article class="type-selectors">
+			<button class="type-select active todos" onclick="filterSelection('all')">todos</button>
+
+			<button class="type-select" onclick="filterSelection('luminarias')">Luminarias de emergencia</button>
+			<button class="type-select" onclick="filterSelection('balizamiento')">Balizamiento</button>
+			<button class="type-select" onclick="filterSelection('proyectores')">Proyectores de emergencia</button>
+			<button class="type-select" onclick="filterSelection('senalizacion')">Señalización</button>
+			<button class="type-select" onclick="filterSelection('kits')">Kits de emergencia, Balastos
+				electrónicos</button>
+			<button class="type-select" onclick="filterSelection('equipos')">Equipos de alimentación</button>
+			<button class="type-select" onclick="filterSelection('sistemas')">Sistemas de control</button>
+			<button class="type-select" onclick="filterSelection('especiales')">Luminarias y especiales</button>
+			<button class="type-select" onclick="filterSelection('alumbrado_portatil')">Alumbrado portátil</button>
+		</article>
+
+	</section>
+	<section class="filterDiv luminarias">
+		<p class="text-luminarias-emergencia">Las luminarias autónomas de emergencia utilizan para su encendido la energía acumulada en sus baterías cuando la tensión cae por debajo del 70% del valor nominal. La gran ventaja de ser autónomas es que son independientes del cableado que los alimenta, incrementando por tanto la seguridad ante cualquier emergencia.</p>
+		<article class="title-all">
+		</article>
+		<article class="product">
+			<a onclick="naos()" class="button-hidden"><img src="src/naos.jpg" alt="naos" class="img-p"></a>
+			<h5 class="product-t">Naos</h5>
+			
+		</article>
+		<article class="product">
+			<img src="src/izar.jpg" alt="izar" class="img-p">
+			<h5 class="product-t">Izar</h5>
+		</article>
+		<article class="product">
+			<img src="src/ziner_.jpg" alt="ziner" class="img-p">
+			<h5 class="product-t">Ziner</h5>
+		</article>
+		<article class="product">
+			<img src="src/block.jpg" alt="block" class="img-p">
+			<h5 class="product-t">Block</h5>
+		</article>
+		<article class="product">
+			<img src="src/lens_.jpg" alt="lens" class="img-p">
+			<h5 class="product-t">Lens</h5>
+		</article>
+		<article class="product">
+			<img src="src/nova_.jpg" alt="nova" class="img-p">
+			<h5 class="product-t">Nova</h5>
+		</article>
+		<article class="product">
+			<img src="src/hydra_.jpg" alt="hydra" class="img-p">
+			<h5 class="product-t">Hydra</h5>
+		</article>
+		<article class="product">
+			<img src="src/argos_.jpg" alt="argos" class="img-p">
+			<h5 class="product-t">Argos</h5>
+		</article>
+		<article class="product">
+			<img src="src/myra_.jpg" alt="myra" class="img-p">
+			<h5 class="product-t">Myra</h5>
+		</article>
+		<article class="product">
+			<img src="src/norma_.jpg" alt="norma" class="img-p">
+			<h5 class="product-t">Norma</h5>
+		</article>
+		<article class="product">
+			<img src="src/iris_.jpg" alt="iris" class="img-p">
+			<h5 class="product-t">Iris</h5>
+		</article>
+		<article class="product">
+			<img src="src/sol_.jpg" alt="sol" class="img-p">
+			<h5 class="product-t">Sol</h5>
+			<p class="product-d"></p>
+		</article>
+		<article class="product">
+			<img src="src/galia_.jpg" alt="galia" class="img-p">
+			<h5 class="product-t">Galia</h5>
+		</article>
+		<article class="product">
+			<img src="src/orto_.jpg" alt="orto" class="img-p">
+			<h5 class="product-t">Orto</h5>
+		</article>
+		<!-- 
+		<article class="product">
+			<img src="src/carril_.jpg" alt="carril" class="img-p">
+			<h5 class="product-t">Carril</h5>
+		</article>
+		<article class="product">
+			<img src="src/luna_.jpg" alt="luna" class="img-p">
+			<h5 class="product-t">Luna</h5>
+		</article>
+		-->
+		<article class="product">
+			<img src="src/pantalla_.jpg" alt="pantalla-estanca" class="img-p">
+			<h5 class="product-t">Pantalla Estanca</h5>
+		</article>
+		<article class="product">
+			<img src="src/antideflagrante_.jpg" alt="antideflagrante" class="img-p">
+			<h5 class="product-t">Antideflagrante</h5>
+		</article>
+		<article class="product">
+	
+		</article>
+		<article class="product">
+
+		</article>
+	</section>
+
+	<section class="filterDiv balizamiento">
+		<article class="product">
+			<img src="src/aqua_.png" alt="aqua" class="img-p">
+			<h5 class="product-t">Aqua</h5>
+		</article>
+		<article class="product">
+			<img src="src/leda_png.png" alt="aqua" class="img-p">
+			<h5 class="product-t">Leda</h5>
+		</article>
+	</section>
+
+	<section class="filterDiv proyectores">
+		<article class="product">
+			<img src="src/atria_.png" alt="aqua" class="img-p">
+			<h5 class="product-t">Atria</h5>
+		</article>
+		<article class="product">
+			<img src="src/zenit_.png" alt="aqua" class="img-p">
+			<h5 class="product-t">Zenit</h5>
+		</article>
+	</section>
+	<section class="filterDiv senalizacion"></section>
+	<section class="filterDiv kits"></section>
+	<section class="filterDiv equipos"></section>
+	<section class="filterDiv sistemas"></section>
+	<section class="filterDiv especiales"></section>
+	<section class="filterDiv alumbrado_portatil"></section>
+
+	<div id="hidden-izar">
+		<section class="products-configurator">
+		</section>
+
+
+
+	<section id="config-articulo">
+		<h3>Tipo instalación</h3>
+		<article class="aplicacion">
+			<!-- Interior o exterior -->
+			<select name="donde" id="donde">
+				<label for="interior_exterior">Interior | Intempérie</label>
+				<option value="interior_exterior">Interior</option>
+			</select>	
+		</article>
+		<article class="instalacion">
+			<h3>Instalación</h3>
+			<label for="instalacion"></label>
+		</article>
+	</section>
+
+
+
+
+
+	<script>
+
+		filterSelection("all")
+		function filterSelection(c) {
+			var x, i;
+			x = document.getElementsByClassName("filterDiv");
+			/* 	if (c == "all") c = "";*/
+			if (c == "") c = "";
+			for (i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			}
+		}
+
+		function w3AddClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+			}
+		}
+
+		function w3RemoveClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current button (highlight it)
+		var btnContainer = document.getElementById("container-type-product");
+		var btns = btnContainer.getElementsByClassName("type-select");
+		for (var i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				var current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+	</script>
+
+
+</body>
+
+</html>

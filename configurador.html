@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style/style.css">
+		<link rel="stylesheet" href="style/configurador.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="icon" type="image/png" href="src/fav.png" sizes="64x64">
+		<title>Daisalux - Iluminación de emergencia</title>
+		<script src="js/script.js"></script>
+	</head>
+	<body>
+		</header>
+			<nav id="menu">
+				<div class="logo-switch" id="switch">
+					<a href="configurador.html"><img src="src/logo.jpeg" alt="logo-daisalux" id="logo" width="172" height="auto"></a>
+					<!-- Rounded switch -->
+				</div>
+				</div>		
+			</nav>
+		</header>
+	<div id="box">
+		<div id="config">
+			<section id="box-configurador">
+				<article class="box-titles">
+					<h2 class="titulo-configurador">Configurador de luminarias</h2>
+				</article>
+				<article id="familia">
+					<h5 class="titulo-checkbox">Series <hr class="line-product"></h5><br>	
+
+					<div class="prod_naos" onclick="showNaos()" id="naos-producto">
+						<a><img src="src/naos.jpeg" alt=""class="img-mini-naos">
+							<h6 class="titulo-articulo-naos">Naos</h6>
+						</a>
+					</div>
+					<div class="prod">
+						<img src="src/izar.jpg" alt=""class="img-mini" id="hideShow-izar">
+						<h6 class="titulo-articulo">Izar</h6>
+					</div>
+					<div class="prod">
+						<img src="src/ziner_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Ziner</h6>
+					</div>
+					<div class="prod">
+						<img src="src/lens_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Lens</h6>
+					</div>
+					<div class="prod">
+						<img src="src/block.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Block</h6>
+					</div>
+					<div class="prod">
+						<img src="src/nova_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Nova</h6>
+					</div>
+					<div class="prod">
+						<img src="src/hydra_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Hydra</h6>
+					</div>
+					<div class="prod">
+						<img src="src/argos_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Argos</h6>
+					</div>
+					<div class="prod">
+						<img src="src/myra_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Myra</h6>
+					</div>
+
+					<div class="prod">
+						<img src="src/iris_.jpg" alt=""class="img-mini">
+						<h6 class="titulo-articulo">Iris</h6>
+					</div>
+					<div class="prod">
+						<img src="src/norma_.jpg" alt=""class="img-mini">
+						<h6 class="titulo-articulo">Norma</h6>
+					</div>
+
+					<div class="prod">
+						<img src="src/sol_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Sol</h6>
+					</div>
+					<div class="prod">
+						<img src="src/galia_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Galia</h6>
+					</div>
+					<div class="prod">
+						<img src="src/orto_.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Orto</h6>
+					</div>
+					<div class="prod">
+						<img src="src/block.jpg" alt="" class="img-mini">
+						<h6 class="titulo-articulo">Carril</h6>
+					</div>
+
+					<div class="product-color">
+						<h5>COLOR</h5>
+						<a href="#" onclick="hideShowNaosWhite()"><div class="color-blanco" id="blanco">B</div></a>
+						<a href="#" onclick="hideShowNaosBlack()"><div class="color-negro" id="negro">N</div></a>
+					</div>
+					<div class="product-color">
+						<h5>COLOR <small>LED</small>  </h5>
+						<div class="color-blanco-led" id="led-blanco-frio"></div>
+						<div class="color-blanco-calido-led" id="led-blanco-calido"></div>
+					</div>
+				</article>	
+				<article id="instalacion">
+					<h5 class="titulo-checkbox">Instalación</h5>
+					<hr class="line-product">
+					<div class="prod-instalacion-techo">
+						<img src="src/Naos-techo-blanca.png" alt=""class="img-mini-instalacion-techo">
+						<h6 class="titulo-articulo">Techo</h6>
+					</div>
+					<div class="prod-instalacion">
+						<img src="src/naos_pared__.png" alt=""class="img-mini-instalacion">
+						<h6 class="titulo-articulo">Pared</h6>
+					</div>
+					<div class="prod-instalacion">
+						<img src="src/naos_enrasado__.png" alt=""class="img-mini-instalacion">
+						<h6 class="titulo-articulo">Enrasado</h6>
+					</div>
+					<div class="prod-instalacion">
+						<img src="src/naos_estanco__.png" alt=""class="img-mini-instalacion">
+						<h6 class="titulo-articulo">Estanco</h6>
+					</div>
+
+				</article>
+				<hr class="line-product">
+		
+				<article id="box_permanente">
+					<h5 class="titulo-checkbox">FUNCIONAMIENTO</h5>
+					<label for="permanente"><input type="checkbox" class="checkbox-round" id="permanente" checked disabled>Permanentes</label>
+					<br>
+					<label for="no_permanente"><input type="checkbox" class="checkbox-round" id="no_permanente" disabled>No Permanentes</label>
+					<br>
+					<label for="luminaria"><input type="checkbox" class="checkbox-round" id="luminaria" disabled>Luminaria</label>
+				</article>
+				<p class="small-text"><b>Las luminarias de emergencia que están equipadas con batería de tecnología LiFeP0<small>4</small> incorporan un sistema microprocesado de carga por impulsos que permite una importante reducción del consumo energético.</b><br><br></p>
+				<p class="small-text">* Los modelos <i>Permanentes</i> TCA, disponen de la función <i>ECO-permanente.</i></p>
+				<p class="small-text">** Los modelos luminaria ELC permite comunicar con equipos CB y LPS por el mismo cable de alimentación.</p>
+				<p class="small-text">** Los modelos luminaria ELC permite comunicar con equipos CB y LPS por el mismo cable de alimentación.</p>
+				<p class="small-text">*** El conjunto óptico "Evacuación" permite una mayor interdistancia de colocación entre luminarias en lugares como pasillos, consiguiendo los niveles adecuados de illuminación en recorridos de evacuación.</p>
+		
+				<article id="altura">
+					<h5 class="titulo-checkbox">Altura colocación</h5>
+					<hr class="line-product">
+					<label for="dos-cinco"><input type="checkbox" class="checkbox-round" id="dos-cinco" checked disabled>2,2 a 5,0 metros</label>
+					<br>
+					<label for="tres-siete"><input type="checkbox" class="checkbox-round" id="tres-siete" disabled>3,0 a 7,0 metros</label>
+				</article>
+
+		
+				<article id="autonomia">
+					<h5 class="titulo-checkbox">Autonomía</h5>
+					<hr class="line-product">
+					<label for="autonomia_one"><input type="checkbox" class="checkbox-round" id="autonomia_one" disabled>1 hora</label>
+					<br>
+					<label for="autonomia_two"><input type="checkbox" class="checkbox-round" id="autonomia_two" checked disabled>2 horas</label>
+					<br>
+					<label for="autonomia_three"><input type="checkbox" class="checkbox-round" id="autonomia_three" disabled>3 horas</label>
+				</article>
+		
+		
+				<article id="sistema">
+					<h5 class="titulo-checkbox">Sistema</h5>
+					<hr class="line-product">
+					<label for="autotest"><input type="checkbox" class="checkbox-round" id="autotest" checked disabled>Autotest</label>
+					<br>
+					<label for="tca"><input type="checkbox" class="checkbox-round" id="tca" disabled>TCA</label>
+					<br>
+					<label for="dali"><input type="checkbox" class="checkbox-round" id="dali" disabled>DALI</label>
+				</article>
+				<h5 class="titulo-checkbox">Lúmenes</h5>
+				<hr class="line-product">
+				<article class="opciones-configuracion">
+					<h5 class="titulo-configurador">Emergencia</h5>
+					<label for="lm-90"><input type="checkbox" class="checkbox-round" id="lm-90"  disabled>90&nbsp&nbsp</label>
+					<label for="lm-180"><input type="checkbox" class="checkbox-round" id="lm-180" checked disabled>180</label>
+					<label for="lm-200"><input type="checkbox" class="checkbox-round" id="lm-200" disabled>200</label>
+					<label for="lm-250"><input type="checkbox" class="checkbox-round" id="lm-250" disabled>250</label>
+					<label for="lm-270"><input type="checkbox" class="checkbox-round" id="lm-270" disabled>270</label>
+					<label for="lm-330"><input type="checkbox" class="checkbox-round" id="lm-330" disabled>330</label>
+					<label for="lm-360"><input type="checkbox" class="checkbox-round" id="lm-360" disabled>360</label>
+					<label for="lm-440"><input type="checkbox" class="checkbox-round" id="lm-440" disabled>440</label>
+				</article>
+				<article class="opciones-configuracion">
+					<h5 class="titulo-configurador">Luminaria</h5>
+					<label for="lm-140"><input type="checkbox" class="checkbox-round" id="lm-140" disabled>140</label>
+					<label for="lm-180"><input type="checkbox" class="checkbox-round" id="lm-180" disabled>180</label>
+					<label for="lm-200"><input type="checkbox" class="checkbox-round" id="lm-200" disabled>200</label>
+					<label for="lm-100"><input type="checkbox" class="checkbox-round" id="lm-400" disabled>400</label>
+				</article>
+				<br>
+				<br>
+				<p class="small-text">Dispone de un sistema de fijación y conexión rápida.</p>
+				<p class="small-text">Grado de protección: <b>IP43 IK04 (IP66 con KES Naos)</b></p>
+				<article class="finish-selection">
+					<button class="show-all" onclick="location.href='product.html';">Seleccionar</button>
+				</article>
+		</div>
+		<div id="box-one">
+			<section id="box-one">
+				<article class="selected-product" id="selected">
+					<h3 class="titulo-naoss"><b>Naos</b> <small><i>series</i></small></h1>	
+						<hr class="line-product-selected">
+
+					<p class="description">Cuerpo rectángular con aristas redondeadas que consta de una carcasa fabricada en material sintético y difusor con tecnología MCRLED.</p>
+
+					<div class="box-image-product">
+						<img src="src/Naos-techo-blanca.png" alt="" class="img-naos" id="img-naos-blanco">
+						<img src="src/naos-negro__.jpeg" alt="" class="img-naos" id="img-naos-negro">
+						<img src="src/naos_size.png" alt="">
+					</div>
+					<div id="product-dectipcion-content">
+						<p class="small-description">Baterías <i>LiFePO4</i> con electrónica de control de carga en función de la temperatura y control independiente de la tensión de cada módulo. El uso de difusores planos microestructurados MCR<small>LED</small> asegura un óptimo rendimiento lumínico en un amplio rango de alturas de colocación en techo y pared. Dispone de una fuente de luz LED que entra en funcionamiento ante corte de red.</p>
+					</div>
+				</article>
+			</section>
+		</div>
+	</div>
+	<script>					
+		/* Colores */
+		var blanco = document.getElementById("blanco");
+		var negro  = document.getElementById("negro");
+		var selected = document.getElementById("selected");
+
+		var naos = document.getElementById("naos-producto");
+
+		/* color led */
+		var blanco_frio = document.getElementById("led-blanco-frio");
+		var blanco_calido = document.getElementById("led-blanco-calido"); 
+		/* Elementos */
+		var naosBlanco = document.getElementById("img-naos-blanco");
+		var naosNegro = document.getElementById("img-naos-negro");
+	
+
+		function showNaos(){
+			naosBlanco.style.display = "block";
+			selected.style.display = "block";
+		}
+
+		function hideShowNaosWhite(){
+			naosBlanco.style.display = "block";
+			naosNegro.style.display= "none";
+			blanco.style.border = "1.5px solid #5899be";
+			naos.style.pointerEvents = "none";
+		}
+
+
+		function hideShowNaosBlack(){
+			naosNegro.style.display = "block";
+			blanco.style.border = "none";
+			naosBlanco.style.display = "none";
+			naos.style.pointerEvents = "none";
+
+		}
+
+		function ledBlanco(){
+			blanco_frio.style.border = "1.5px solid #5899be";
+		}
+	</script>
+	
+</body>
+<footer>
+	<p>Daisalux © copyright 2022  |  daisalux@daisalux.com  - Telf.: (+34) 945 29 01 81  | <a href="#" target="_blank">Aviso Legal</a>  |  Mapa web</p>
+</footer>
+</html>
